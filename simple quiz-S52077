@@ -1,0 +1,16 @@
+class Square:
+     side = 1.0
+ 
+    def __init__(self, side):
+        self.side = side*4
+        
+         if  self.side < 0:
+                  self.side= 0
+
+    def disParam(self):
+        print("Parameter:",self.side)
+        
+side1=Square(2.0)
+side1.disParam()
+side1.parameter = 4
+setattr(side,'parameter',4)
